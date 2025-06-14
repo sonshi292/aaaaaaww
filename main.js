@@ -8,7 +8,6 @@ const {
 const client = new Client({
     intents:  Object.values(GatewayIntentBits).filter(Number.isInteger)
   });
-client.login("MTM3NjEyOTIzNDQ4OTA1MzI0Nw.Gl5enk.ksDvlT-lrBL8P4C3bVxKKwETrLfbKsVqIvTKSI");
 
 client.on(Events.MessageCreate, message => {
    if (message.author.bot) return; 
